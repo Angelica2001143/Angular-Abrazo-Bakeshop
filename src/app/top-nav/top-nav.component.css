@@ -1,13 +1,8 @@
     .nav {
-        background-color: rgb(232, 211, 21);
+        background-color: rgb(190, 172, 8);
     }
     
-    .navlist {
-        padding-top: 10px;
-    }
-    
-    .image {
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
+    .navbar1 {
+        float: right;
+        margin-left: 18cm;
     }

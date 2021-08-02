@@ -1,0 +1,45 @@
+.carous {
+    width: 55%;
+    height: 10%;
+    margin-left: 8cm;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(8, 8, 8, 0.2);
+    width: 80%;
+    height: 50%;
+}
+
+.gfg {
+    position: relative;
+    width: 100%;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 85%;
+    padding: 25px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+h4 {
+    text-align: center;
+}
