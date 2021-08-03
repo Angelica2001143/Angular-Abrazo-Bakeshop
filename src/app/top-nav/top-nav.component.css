@@ -1,5 +1,7 @@
     .nav {
         background-color: rgb(190, 172, 8);
+        position: sticky;
+        top: 0;
     }
     
     .navbar1 {
