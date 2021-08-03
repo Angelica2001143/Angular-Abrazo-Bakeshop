@@ -21,6 +21,7 @@ const routes: Routes = [
   { path:'cakes', component: CakesComponent, pathMatch: 'full'},
   { path:'sign', component: SignUpComponent, pathMatch: 'full'},
   { path:'home', component: CarouselComponent, pathMatch: 'full'},
+  
 
 
 ];

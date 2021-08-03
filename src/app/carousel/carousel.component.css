@@ -1,5 +1,5 @@
 .carous {
-    width: 55%;
+    width: 50%;
     height: 10%;
     margin-left: 8cm;
 }
@@ -34,7 +34,7 @@
     text-align: center;
 }
 
-.image {
+.images {
     width: 100%;
     filter: blur(5px);
     -webkit-filter: blur(5px);
@@ -42,4 +42,19 @@
 
 h4 {
     text-align: center;
+}
+
+.image {
+    height: 50%;
+    width: 100%;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.card {
+    width: 14rem;
+    height: 90%;
+    box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);
 }

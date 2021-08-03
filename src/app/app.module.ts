@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PastriesComponent } from './pastries/pastries.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     ContactComponent,
     PastriesComponent,
     ProductListComponent,
-    SignUpComponent
+    SignUpComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
