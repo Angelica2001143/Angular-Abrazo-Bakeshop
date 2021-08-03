@@ -12,6 +12,10 @@ import { Router } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PastriesComponent } from './pastries/pastries.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,9 @@ import { PastriesComponent } from './pastries/pastries.component';
     CakesComponent,
     AboutComponent,
     ContactComponent,
-    PastriesComponent
+    PastriesComponent,
+    ProductListComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
