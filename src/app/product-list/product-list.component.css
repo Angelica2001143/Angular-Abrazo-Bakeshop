@@ -1,0 +1,14 @@
+.image {
+    height: 50%;
+    width: 100%;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.card {
+    width: 12rem;
+    height: 65%;
+    box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);
+}

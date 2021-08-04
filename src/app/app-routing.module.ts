@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { PastriesComponent } from './pastries/pastries.component';
+import { UserDashComponent } from './user-dash/user-dash.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path:'cakes', component: CakesComponent, pathMatch: 'full'},
   { path:'sign', component: SignUpComponent, pathMatch: 'full'},
   { path:'home', component: CarouselComponent, pathMatch: 'full'},
+  { path: 'user', component: UserDashComponent, pathMatch: 'full'}
   
 
 

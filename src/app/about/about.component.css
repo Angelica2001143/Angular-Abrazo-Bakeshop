@@ -1,0 +1,18 @@
+h1,
+h5 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+p {
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+.about {
+    background-color: hsl(0, 6%, 91%);
+    box-shadow: 0 6px 10px 0 rgba(8, 8, 8, 0.2), 0 6px 20px 0 rgba(3, 0, 0, 0.19);
+    width: 90%;
+    margin-left: 2cm;
+}

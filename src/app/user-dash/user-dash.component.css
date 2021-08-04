@@ -1,0 +1,77 @@
+h2 {
+    margin-left: 1cm;
+}
+
+.navbar {
+    width: 100%;
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: rgb(165, 170, 235);
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+
+/* NAV BAR HOVER NI */
+
+.dropdown {
+    float: right;
+    /* overflow: hidden; */
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(131, 116, 31);
+}
+
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    background-color: white;
+    min-width: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

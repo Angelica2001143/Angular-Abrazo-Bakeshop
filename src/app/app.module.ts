@@ -15,6 +15,7 @@ import { PastriesComponent } from './pastries/pastries.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { UserDashComponent } from './user-dash/user-dash.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     PastriesComponent,
     ProductListComponent,
     SignUpComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    UserDashComponent
   ],
   imports: [
     BrowserModule,

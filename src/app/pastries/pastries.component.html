@@ -1,126 +1,343 @@
 <div style="margin-top:1px;">
-    <app-product-list></app-product-list>
-</div>
-<div class="container mt-2">
-    <br>
+    <app-user-dash></app-user-dash>
+    <div class="container mt-2 " style="background-color:hsl(0, 6%, 91%);box-shadow: 0 6px 10px 0 rgba(8, 8, 8, 0.2), 0 6px 20px 0 rgba(3, 0, 0, 0.19);">
+        <br>
+        <hr class="new3">
+        <h3 class="text-center">PASTRIES</h3>
+        <hr class="new3">
+        <br>
 
-    <h3 class="text-center">PASTRIES</h3>
 
-    <br>
+        <div class="container">
+            <div class="row">
+                <form class="form" method="post">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG">
-                    <div class="card-body text-center">
-                        <h6><a href="#">Bread 1</a></h6>
-                        <h6 class="price">Php 300.00</h6>
-                        <button type="button" class="btn btn-primary button button ">Order Now</button>
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Khairul_Izwan_Wedding_%40_Bukit_Jelutong.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Bahulu">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Bahulu</span>
+                            <br>
+                            <span class="product-price color">₱100.00</span>
+                            <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 2</a></h6>
-                        <h6 class="price">Php 200.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
+
+                </form>
+
+
+
+                <form class="form" method="post">
+
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Bakpia_pathok_%28cropped1%29.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Bakpia Pathok">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Bakpia Pathok</span>
+                            <br>
+                            <span class="product-price color">₱200.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top  image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 3</a></h6>
-                        <h6 class="price">Php 100.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
+
+                </form>
+
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Baklavas%2C_freshly_baked.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Baklava">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Baklava</span>
+                            <br>
+                            <span class="product-price color">₱150.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 4</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
+
+                </form>
+
+
+
+                <form class="form" method="post">
+
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Banitsa_borzo.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Banitsa">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Banitsa</span>
+                            <br>
+                            <span class="product-price color">₱200.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXFFujpWcj5zMZcajyJlEqtfGzcfTc1JGJC6HoewS-AFVC9uOo4oN2baHsD7Mv7xdTWA&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h6><a href="../src/html/Public/login.php">Bread 5</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
+
+                </form>
+
+
+
+                <form class="form" method="post">
+
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/B%C3%BCndner_Birnbrot.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Birnbrot">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Birnbrot</span>
+                            <br>
+                            <span class="product-price color">₱400.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div><br><br>
+
+                </form>
+            </div><br><br>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Boyoz_g%C3%B6sterim.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Boyoz">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Boyoz</span>
+                            <br>
+                            <span class="product-price color">₱100.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Bridie.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Bridie">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Bridie</span>
+                            <br>
+                            <span class="product-price color">₱300.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Croissant_photo_detouree_W_%28cropped%29.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Croissant">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Croissant</span>
+                            <br>
+                            <span class="product-price color">₱200.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Bistro_Jeanty_-_Sarah_Stierch_-_May_2018_05.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Bistro">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Bistro</span>
+                            <br>
+
+                            <span class="product-price color">₱140.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Cronut.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Cronut">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Cronut</span>
+                            <br>
+
+                            <span class="product-price color">₱250.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+            </div><br><br>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Cinnamon_snails.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Cinnamon Snails">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Cinnamon Snails</span>
+                            <br>
+                            <span class="product-price color">₱100.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="form" method="post">
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Empanadas_argentinas_2017.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Empanada">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Empanada</span>
+                            <br>
+                            <span class="product-price color">₱120.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Ensa%C3%AFmades_individuals.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Ensaimada">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Ensaimada</span>
+                            <br>
+                            <span class="product-price color">₱150.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/05318jfFoods_of_Bulacan_Philippinesfvf_14.jpg">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Inipit">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Inipit</span>
+                            <br>
+
+                            <span class="product-price color">₱400.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+                <form class="form" method="post">
+
+                    <div class="card" style="width: 12rem; height: 100%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                        <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Makmur.png">
+                        <div class="card-body text-center">
+                            <input type="hidden" name="productName" value="Makmur">
+                            <input type="hidden" name="productPrice" value="400">
+                            <span class="product-name color"> Makmur</span>
+                            <br>
+
+                            <span class="product-price color">₱350.00</span> <br>
+                            <button type="submit" class="btn" name="addToCart">
+                                    <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
+                                </button>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div><br><br>
+        </div>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG">
-                    <div class="card-body text-center">
-                        <h6><a href="#">Bread 1</a></h6>
-                        <h6 class="price">Php 300.00</h6>
-                        <button type="button" class="btn btn-primary button button ">Order Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 2</a></h6>
-                        <h6 class="price">Php 200.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top  image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 3</a></h6>
-                        <h6 class="price">Php 100.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 4</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXFFujpWcj5zMZcajyJlEqtfGzcfTc1JGJC6HoewS-AFVC9uOo4oN2baHsD7Mv7xdTWA&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h6><a href="../src/html/Public/login.php">Bread 5</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="button" class="btn btn-primary button">Order Now</button>
-                    </div>
-                </div>
-            </div>
-        </div><br><br>
+    <br>
+    <div>
+        <app-footer></app-footer>
     </div>
-
-</div>
-<br>
-<br>
-<div>
-    <app-footer></app-footer>
-</div>
