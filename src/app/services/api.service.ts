@@ -12,8 +12,8 @@ export class ApiService {
       return this.http.get(url)
   }
 
-  saveData(url: string) {
-    return this.http.get(url)
+  saveData(url,body) {
+    return this.http.post(url,body);
     
     }
 
