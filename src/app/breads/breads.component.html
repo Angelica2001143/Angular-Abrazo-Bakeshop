@@ -1,144 +1,33 @@
 <div style="margin-top:1px;">
-    <app-user-dash></app-user-dash>
+    <app-user-dash [productOrderBread]='productOrder'></app-user-dash>
 </div>
 <div class="container mt-2">
     <br>
-
+    <hr class="new3">
     <h3 class="text-center">BREADS</h3>
-
+    <hr class="new3">
     <br>
-
     <div class="container">
         <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG">
+            <div class="col" *ngFor=" let bread of breads">
+                <div class="card mb-3" style="width: 12rem;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
+                    <img class="card-img-top image" style="height: 12rem;" src="{{bread.image}}">
                     <div class="card-body text-center">
-                        <h6><a href="#">Bread 1</a></h6>
-                        <h6 class="price">Php 300.00</h6>
+                        <h6 class="text-truncate" style="width: 150px;"><a href="#">{{bread.productName}}</a></h6>
+                        <h6 class="price">P{{bread.price}} per pcs.</h6>
                         <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 2</a></h6>
-                        <h6 class="price">Php 200.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top  image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 3</a></h6>
-                        <h6 class="price">Php 100.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 4</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXFFujpWcj5zMZcajyJlEqtfGzcfTc1JGJC6HoewS-AFVC9uOo4oN2baHsD7Mv7xdTWA&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h6><a href="../src/html/Public/login.php">Bread 5</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
+                                    <i class="Add To Cart" style="color:#de094c" (click)="addToCart(bread.id,bread.productName,bread.price)">Add To Cart</i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG">
-                    <div class="card-body text-center">
-                        <h6><a href="#">Bread 1</a></h6>
-                        <h6 class="price">Php 300.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/1200px-Korb_mit_Br%C3%B6tchen.JPG" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 2</a></h6>
-                        <h6 class="price">Php 200.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem; height: 75%; box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top  image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 3</a></h6>
-                        <h6 class="price">Php 100.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTmstdhHxcUlwsKVDpzYvlbxFBBrp1BjiIg&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center" style="height: 100px;">
-                        <h6><a href="../src/html/Public/login.php">Bread 4</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 12rem;  height: 75%;box-shadow: 0 3px 6px 0 rgba(248, 28, 28, 0.2), 0 6px 20px 0 rgba(253, 4, 4, 0.19);">
-                    <img class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXFFujpWcj5zMZcajyJlEqtfGzcfTc1JGJC6HoewS-AFVC9uOo4oN2baHsD7Mv7xdTWA&usqp=CAU" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h6><a href="../src/html/Public/login.php">Bread 5</a></h6>
-                        <h6 class="price">Php 140.00</h6>
-                        <button type="submit" class="btn" name="addToCart">
-                                <i class="Add To Cart" style="color:#de094c">Add To Cart</i>
-                            </button>
-                    </div>
-                </div>
-            </div>
-        </div><br><br>
     </div>
-
 </div>
+
+
+
 
 <div>
     <app-footer></app-footer>

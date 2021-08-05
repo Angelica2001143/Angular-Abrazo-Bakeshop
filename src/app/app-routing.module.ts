@@ -9,6 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { PastriesComponent } from './pastries/pastries.component';
 import { UserDashComponent } from './user-dash/user-dash.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -21,8 +23,10 @@ const routes: Routes = [
   { path:'pastries', component: PastriesComponent, pathMatch: 'full'},
   { path:'cakes', component: CakesComponent, pathMatch: 'full'},
   { path:'sign', component: SignUpComponent, pathMatch: 'full'},
+  { path:'log', component: LogInComponent, pathMatch: 'full'},
   { path:'home', component: CarouselComponent, pathMatch: 'full'},
-  { path: 'user', component: UserDashComponent, pathMatch: 'full'}
+  { path: 'user', component: UserDashComponent, pathMatch: 'full'},
+  { path: 'cart', component: CartComponent, pathMatch: 'full'}
   
 
 

@@ -1,0 +1,72 @@
+<app-top-nav>
+</app-top-nav>
+<br>
+
+
+<div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+        <div class="front">
+
+
+            <div class="text">
+                <span class="text-1">Great taste  <br> in every bite.</span>
+                <span class="text-2">Let's get started</span>
+            </div>
+        </div>
+        <div class="back">
+
+
+            <div class="text">
+                <span class="text-1">Great taste  <br> in every bite.</span>
+                <span class="text-2">Let's get started</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="forms">
+        <div class="form-content">
+            <div class="login-form">
+                <br>
+                <div class="title">Login</div>
+                <br>
+                <form (ngSubmit)="user.valid && onSubmit()" [formGroup]="user" class="userLogin">
+                    <div class="input-boxes">
+                        <div class="input-box">
+
+                            <input type="text" class="form-control" formControlName="username" [ngClass]="{'is-invalid': user.get('username').invalid}" placeholder="Username">
+                            <div *ngIf="user.get('username').touched && user.get('username').invalid" class="invalid-feedback">
+                                <p class="validate" *ngIf="user.get('username').errors.required">Username is required</p>
+                                <p class="validate" *ngIf="user.get('username').errors.minlenght">more than 10 characters but less than 20</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-box">
+
+                            <input type="text" class="form-control" formControlName="password" [ngClass]="{'is-invalid': user.get('password').invalid}" placeholder="Password">
+                            <div *ngIf="user.get('password').touched && user.get('password').invalid" class="invalid-feedback">
+                                <p class="validate" *ngIf="user.get('password').errors.required">password is required</p>
+                                <p class="validate" *ngIf="user.get('password').errors.minlenght">more than 10 characters but less than 20</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <br>
+                        <div class="button input-box">
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="text sign-up-text">Don't have an account? <label for="flip" routerLink="/sign">Signup now</label></div>
+                        <br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<div>
+    <app-footer></app-footer>
+</div>

@@ -4,7 +4,7 @@
 <div class="image">
 
     <div class="container">
-        <input type="checkbox" id="flip">
+
         <div class="cover">
             <div class="front">
 
@@ -16,70 +16,64 @@
             </div>
             <div class="back">
 
-
-                <div class="text">
-                    <span class="text-1">Great taste  <br> in every bite.</span>
-                    <span class="text-2">Let's get started</span>
-                </div>
             </div>
         </div>
 
         <div class="forms">
             <div class="form-content">
-                <div class="login-form">
-                    <div class="title">Login</div>
-                    <form action="#">
-                        <div class="input-boxes">
-                            <div class="input-box">
-                                <i class="fas fa-envelope"></i>
-                                <input type="text" placeholder="Enter your email" required>
-                            </div>
-                            <br>
-                            <div class="input-box">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Enter your password" required>
-                            </div>
-                            <div class="text">
-                                <a href="#">Forgot password?</a>
-                            </div>
-                            <br>
-                            <div class="button input-box">
-                                <input type="submit" value="Sumbit">
-                            </div>
-                            <div class="text sign-up-text" routerLink="/breads">Don't have an account? <label for="flip">Signup now</label></div>
-                        </div>
-                    </form>
-                </div>
+
 
                 <div class="signup-form">
+                    <br>
                     <div class="title">Signup</div>
-                    <form action="#">
+                    <form (ngSubmit)="user.valid && onSubmit()" [formGroup]="user" class="sign-up">
                         <div class="input-boxes">
                             <div class="input-box ">
-                                <i class="fas fa-user"></i>
-                                <input type="text" placeholder="Enter Username" required>
+
+                                <input type="text" class="form-control" formControlName="username" [ngClass]="{'is-invalid': user.get('username').invalid}" placeholder="Username">
+                                <div *ngIf="user.get('username').touched && user.get('username').invalid" class="invalid-feedback">
+                                    <p class="validate" *ngIf="user.get('username').errors.required">Fill up this field</p>
+                                    <p class="validate" *ngIf="user.get('username').errors.minlenght">more than 10 characters but less than 20</p>
+                                </div>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-phone"></i>
-                                <input type="text" placeholder="Enter Phonenumber" required>
+
+                                <input type="integer" class="form-control" formControlName="phonenumber" [ngClass]="{'is-invalid': user.get('phonenumber').invalid}" placeholder="PhoneNumber">
+                                <div *ngIf="user.get('phonenumber').touched && user.get('phonenumber').invalid" class="invalid-feedback">
+                                    <p class="validate" *ngIf="user.get('phonenumber').errors.required">Fill up this field</p>
+                                    <p class="validate" *ngIf="user.get('phonenumber').errors.minlenght">more than 10 characters but less than 20</p>
+                                </div>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-envelope"></i>
-                                <input type="text" placeholder="Enter Complete Address" required>
+
+                                <input type="text" class="form-control" formControlName="address" [ngClass]="{'is-invalid': user.get('address').invalid}" placeholder="Address">
+                                <div *ngIf="user.get('address').touched && user.get('address').invalid" class="invalid-feedback">
+                                    <p class="validate" *ngIf="user.get('address').errors.required">Fill up this field</p>
+                                    <p class="validate" *ngIf="user.get('address').errors.minlenght">more than 10 characters but less than 20</p>
+                                </div>
                             </div>
 
                             <div class="input-box">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Enter Password" required>
+
+                                <input type="text" class="form-control" formControlName="password" [ngClass]="{'is-invalid': user.get('password').invalid}" placeholder="Password">
+                                <div *ngIf="user.get('password').touched && user.get('password').invalid" class="invalid-feedback">
+                                    <p class="validate" *ngIf="user.get('password').errors.required">Fill up this field</p>
+                                    <p class="validate" *ngIf="user.get('password').errors.minlenght">8hjxcvd</p>
+                                </div>
                             </div>
                             <div class="input-box">
-                                <i class="fas fa-eye"></i>
-                                <input type="password" placeholder="Confirm Password" required>
+
+                                <input type="text" class="form-control" formControlName="confirmpassword" [ngClass]="{'is-invalid': user.get('confirmpassword').invalid}" placeholder="ConfirmPassword">
+                                <div *ngIf="user.get('confirmpassword').touched && user.get('confirmpassword').invalid" class="invalid-feedback">
+                                    <p class="validate" *ngIf="user.get('confirmpassword').errors.required">Fill up this field</p>
+                                    <p class="validate" *ngIf="user.get('confirmpassword').errors.minlenght">more than 10 characters but less than 20</p>
+                                </div>
                             </div>
                             <div class="button input-box">
                                 <input type="submit" value="Submit">
                             </div>
-                            <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                            <div class="text sign-up-text">Already have an account? <label for="flip" routerLink="/log">Login now</label></div>
+                            <br>
                         </div>
                     </form>
                 </div>
