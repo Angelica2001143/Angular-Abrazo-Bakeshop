@@ -29,7 +29,7 @@ export class CakesComponent implements OnInit {
   addToCart(id,name,price){
     if(!this.cartAvailable){
       console.log("Created New Cart")
-      let url = "http://172.16.32.26:8080/api/create-cart";
+      let url = "http://172.16.32.26:8000/api/create-cart";
       this.apiService.getData(url).subscribe(result=>{  
         let data  = {
           productId:id,
@@ -55,7 +55,7 @@ export class CakesComponent implements OnInit {
   }
 
   loadCakeProducts(){
-    let url = "http://172.16.32.26:8080/api/product/cake"
+    let url = "http://172.16.32.26:8000/api/product/cake"
     this.apiService.getData(url).subscribe(
       result=>{
         this.cakes = result;
@@ -65,7 +65,7 @@ export class CakesComponent implements OnInit {
   }
 
   getAvailableCart(){
-    let url = "http://172.16.32.26:8080/api/get-cart"
+    let url = "http://172.16.32.26:8000/api/get-cart"
     this.apiService.getData(url).subscribe(
       result=>{
        this.cartAvailable  = result;
@@ -74,7 +74,7 @@ export class CakesComponent implements OnInit {
   }
 
   addItemsToCart(data){
-    let url = "http://172.16.32.26:8080/api/add-to-cart"
+    let url = "http://172.16.32.26:800s0/api/add-to-cart"
     this.apiService.saveData(url,data).subscribe(
       result=>{
         console.log(result);

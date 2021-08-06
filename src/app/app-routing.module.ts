@@ -11,6 +11,9 @@ import { PastriesComponent } from './pastries/pastries.component';
 import { UserDashComponent } from './user-dash/user-dash.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { CartComponent } from './cart/cart.component';
+import { AdminComponent} from './admin/admin.component';
+import { AdminProductsComponent } from './admin-products/admin-products.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 
@@ -26,7 +29,10 @@ const routes: Routes = [
   { path:'log', component: LogInComponent, pathMatch: 'full'},
   { path:'home', component: CarouselComponent, pathMatch: 'full'},
   { path: 'user', component: UserDashComponent, pathMatch: 'full'},
-  { path: 'cart', component: CartComponent, pathMatch: 'full'}
+  { path: 'cart', component: CartComponent, pathMatch: 'full'},
+  { path: 'admin', component: AdminComponent, pathMatch: 'full'},
+  { path: 'products', component: AdminProductsComponent, pathMatch: 'full'},
+  { path: 'add', component: UserListComponent, pathMatch: 'full'}
   
 
 

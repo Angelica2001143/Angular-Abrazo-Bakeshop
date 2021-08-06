@@ -21,6 +21,8 @@ import { LogInComponent}  from './log-in/log-in.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
 import { AdminComponent } from './admin/admin.component';
+import { AdminProductsComponent } from './admin-products/admin-products.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 
@@ -41,7 +43,9 @@ import { AdminComponent } from './admin/admin.component';
     UserDashComponent,
     LogInComponent,
     CartComponent,
-    AdminComponent
+    AdminComponent,
+    AdminProductsComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,

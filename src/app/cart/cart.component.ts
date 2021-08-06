@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, EventEmitter} from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cart',
@@ -27,7 +28,7 @@ export class CartComponent implements OnInit {
 
   
   getAvailableCart(){
-    let url = "http://172.16.32.26:8080/api/get-cart"
+    let url = "http://172.16.32.26:8000/api/get-cart"
     this.apiService.getData(url).subscribe(
       result=>{
         this.id  = result['id'];
@@ -37,7 +38,7 @@ export class CartComponent implements OnInit {
   }
 
   loadCartItems(id){
-    let url = `http://172.16.32.26:8080/api/get-cart-items/${id}`
+    let url = `http://172.16.32.26:8000/api/get-cart-items/${id}`
     this.apiService.getData(url).subscribe(
       result=>{
         console.log(result)
@@ -48,19 +49,28 @@ export class CartComponent implements OnInit {
 
 
   checkout(){
-    let url = `http://172.16.32.26:8080/api/checkout-cart/${this.id}`
+    let url = `http://172.16.32.26:8000/api/checkout-cart/${this.id}`
     this.apiService.getData(url).subscribe();
     this.route.navigate(['/breads'])
+    Swal.fire('Checkout...', 'succesfully Checkout!', 'success');
   }
   
 
   sumTotal(){
     let total = 0
     this.cartItems.forEach(item => {
-        total = total + item.price
+        total += parseInt(item.price)
     });
     return total;
   }
+  delete(product){
+    const index= this.cartItems.findIndex(item => item.id == product.id)
+    this.cartItems.splice(index,1)
+    Swal.fire('Deleted...', 'Product succesfully Deleted !', 'warning');
+
+  }
+
+  
 
 
 }

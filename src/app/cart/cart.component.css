@@ -6,3 +6,7 @@ hr.new3 {
     border-top: 1px dotted rgb(255, 187, 0);
     width: 60%;
 }
+
+.btn-info {
+    width: 120px;
+}
