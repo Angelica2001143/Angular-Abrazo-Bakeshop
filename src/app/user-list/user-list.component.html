@@ -20,32 +20,24 @@
                         <th>Username</th>
                         <th>PhoneNumber</th>
                         <th>Address</th>
-                        <th>Action</th>
-
-
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let user of users">
 
-                        <td></td>
-                        <td class="w-25">
-                            <!-- <img src="https://i0.wp.com/ayellowbowl.com/wp-content/uploads/2019/05/P1130059.jpg?w=1140&ssl=1" class="img-fluid img-thumbnail "> -->
-                        </td>
-                        <td></td>
-                        <td> </td>
+                        <td>{{user.id}}</td>
+
+                        <td>{{user.username}}</td>
+                        <td> {{user.phonenumber}}</td>
+                        <td> {{user.address}}</td>
                         <td>
 
-                            <a class="delete" data-toggle="modal"><i class="fa-fa-trash"></i></a>
+
                         </td>
                     </tr>
 
                     <tr>
-
-
-
                     </tr>
-
 
 
                 </tbody>

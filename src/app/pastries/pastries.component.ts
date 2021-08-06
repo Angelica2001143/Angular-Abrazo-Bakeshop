@@ -16,6 +16,8 @@ export class PastriesComponent implements OnInit {
   products =[45,56,45,454,45]
   productOrder = [];
 
+  totalCartItems = 0
+
   constructor(private route: Router,private apiService:ApiService) { }
 
   ngOnInit(): void {
@@ -34,6 +36,7 @@ export class PastriesComponent implements OnInit {
           productName:name,
          price:price
         };
+        this.totalCartItems++
         this.addItemsToCart(data)
         Swal.fire('Added ...', 'Product succesfully added !', 'success');
         this.getAvailableCart();
@@ -46,6 +49,7 @@ export class PastriesComponent implements OnInit {
         productName:name,
         price:price
       };
+      this.totalCartItems++
       this.addItemsToCart(data)
       Swal.fire('Added ...', 'Product succesfully added !', 'success');
     }

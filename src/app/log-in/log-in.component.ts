@@ -24,7 +24,7 @@ export class LogInComponent implements OnInit {
       username: ['', [Validators.required, Validators.minLength(2)]],
       
       
-      password: ['',[Validators.required, Validators.minLength(8)]]
+      password: ['',[Validators.required, Validators.minLength(5)]]
    
     });
   }
@@ -34,7 +34,7 @@ export class LogInComponent implements OnInit {
 
 mydata: any;
 
-  url = "http://127.0.0.1:8000/api/login";
+  url = "http://172.16.32.26:8000/api/login";
 
   spinner = true;
   onSubmit() {
@@ -46,14 +46,25 @@ mydata: any;
       return;
     } 
 
-    console.warn(this.user.value);
-    this.http.post(this.url, this.user.value).subscribe(data=> {
-    this.mydata = data;
 
+    console.log('SSUCESSS');
     
 
+    console.warn(this.user.value);
+    this.http.post<any>(this.url, this.user.value).subscribe(data=> {
+    this.mydata = data;
+
+
     console.log(data);
-    this.router.navigate(['/breads'])
+    
+
+    if(data.logincredential.usertype == 'admin') {
+      this.router.navigate(['/products'])
+    }else {
+
+
+      this.router.navigate(['/breads'])
+    }
     }
     , errors=>{
       // alert("Username is already existing!");

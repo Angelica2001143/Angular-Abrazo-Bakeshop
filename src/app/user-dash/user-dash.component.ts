@@ -15,6 +15,7 @@ export class UserDashComponent implements OnInit {
   @Input() productOrderBread =[];
   @Input() productOrderCake = [];
   @Input() productOrderPastries =[];
+  @Input() totalCartItems = 10
 
   public overallProductOrder;
 

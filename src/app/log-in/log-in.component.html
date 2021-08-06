@@ -43,7 +43,7 @@
                         <br>
                         <div class="input-box">
 
-                            <input type="text" class="form-control" formControlName="password" [ngClass]="{'is-invalid': user.get('password').invalid}" placeholder="Password">
+                            <input type="password" class="form-control" formControlName="password" [ngClass]="{'is-invalid': user.get('password').invalid}" placeholder="Password">
                             <div *ngIf="user.get('password').touched && user.get('password').invalid" class="invalid-feedback">
                                 <p class="validate" *ngIf="user.get('password').errors.required">password is required</p>
                                 <p class="validate" *ngIf="user.get('password').errors.minlenght">more than 10 characters but less than 20</p>

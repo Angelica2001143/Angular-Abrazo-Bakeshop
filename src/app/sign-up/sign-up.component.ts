@@ -58,7 +58,7 @@ export class SignUpComponent implements OnInit {
 
 mydata: any;
 
-  url = "http://127.0.0.1:8000/api/register";
+  url = "http://172.16.32.26:8000/api/register";
 
   spinner = true;
   onSubmit() {
